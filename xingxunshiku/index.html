@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刑讯室酷刑 - 恐怖历史与古代刑罚研究</title>
+    <meta name="description" content="刑讯室酷刑专题页面，收录并研究世界历史上各类残酷的刑讯手段与古代酷刑，探讨刑罚演变与心理影响。">
+    <meta name="keywords" content="刑讯室酷刑,古代刑罚,中世纪酷刑,刑具,刑罚演变">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-red: #8a0303;
+            --accent-dark-red: #4a0202;
+            --border-color: #333;
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-red);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background-color: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(5px);
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--accent-red);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-main);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #1a0505 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent-red);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title span {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+            font-weight: normal;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            border-color: #444;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background-color: #222;
+            position: relative;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            filter: grayscale(20%) contrast(110%);
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--accent-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-family: var(--font-serif);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #2a2a2a;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Detailed Article Layout */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .article-content {
+            background: var(--card-bg);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .article-content h2 {
+            font-family: var(--font-serif);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .article-content p {
+            margin-bottom: 15px;
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--accent-red);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #888;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar-box {
+            background: var(--card-bg);
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar-box h3 {
+            font-family: var(--font-serif);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .list-item::before {
+            content: "•";
+            color: var(--accent-red);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        /* Table of Contents */
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 8px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .toc-list a:hover {
+            color: var(--text-main);
+        }
+
+        /* Warning Banner */
+        .warning-banner {
+            background-color: rgba(138, 3, 3, 0.15);
+            border: 1px solid var(--accent-red);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            color: #ffcccc;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            background-color: #0a0a0a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none; /* Simplify for mobile */
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">History<span>of</span>Torture</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">刑讯室酷刑</a></li>
+                    <li><a href="#categories">刑具分类</a></li>
+                    <li><a href="#history">历史演变</a></li>
+                    <li><a href="#psychology">心理学视角</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>刑讯室酷刑：历史的残酷回响</h1>
+            <p>探索人类历史上最黑暗的篇章。本页面致力于客观记录与研究中世纪至近代的各种酷刑手段、刑讯室环境及其背后的法律与社会意义。</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Warning -->
+        <div class="warning-banner">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span>本站内容涉及血腥暴力历史描述，仅供历史研究与文化参考。请勿尝试任何手段。</span>
+        </div>
+
+        <!-- Featured Section -->
+        <section id="categories">
+            <div class="section-title">
+                <span>酷刑刑具与手段</span>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-image">
+                        <!-- Using picsum with specific seed to get consistent imagery, though content is abstract -->
+                        <img src="https://picsum.photos/seed/torture1/400/300" alt="铁处女">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">实体刑具</span>
+                        <h2>铁处女</h2>
+                        <p>一种著名的刑具，由金属板制成，表面布满尖刺。犯人被锁在里面，通过加热或手动转动，导致尖刺刺穿身体。</p>
+                        <div class="card-footer">
+                            <span>中世纪欧洲</span>
+                            <a href="#">阅读详情 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/torture2/400/300" alt="羞辱刑">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">羞辱刑</span>
+                        <h2>断头台</h2>
+                        <p>虽然主要用于处决，但早期的断头台常伴随严酷的羞辱程序。犯人需公开游街，剥光衣物，以震慑潜在的犯罪者。</p>
+                        <div class="card-footer">
+                            <span>近代欧洲</span>
+                            <a href="#">阅读详情 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/torture3/400/300" alt="水刑">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">审讯手段</span>
+                        <h2>水刑</h2>
+                        <p>一种通过灌水导致溺水感或肺部进水的审讯手段。施刑者堵住鼻孔，将水注入口中，使受刑者产生强烈的窒息恐惧。</p>
+                        <div class="card-footer">
+                            <span>近代刑讯</span>
+                            <a href="#">阅读详情 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Main Article Layout -->
+        <div class="article-layout">
+            <div class="article-content">
+                <h1>刑讯室的历史背景与运作机制</h1>
+                <p>在人类文明的早期，法律体系尚不完善，真相往往难以通过口头陈述来验证。因此，刑讯室成为了司法体系中不可或缺的一部分。它不仅仅是为了获取口供，更是一种展示国家权力和震慑潜在犯罪者的手段。</p>
+                
+                <h2>古代刑讯的合法性</h2>
+                <p>在很长一段时间内，刑讯是被法律明确认可的。古罗马法典、教会法以及中世纪的世俗法律都赋予了法官使用刑讯的权利。当时的逻辑是，如果被告是清白的，神明会保佑他承受住酷刑而不至于死亡；如果被告招供，则证明其有罪。这种“有罪推定”的逻辑在现代看来极其残忍，但在当时却是主流司法实践。</p>
+
+                <h2>刑讯室的布局与氛围</h2>
+                <p>典型的刑讯室通常位于监狱深处或地牢之中，光线昏暗，通风不良，充满了潮湿和霉味。房间内往往陈列着各种刑具，从简单的鞭子到复杂的机械装置一应俱全。这种视觉上的压迫感本身就是一种心理战的一部分，旨在让受刑者在精神崩溃前先在生理上感到绝望。</p>
+
+                <h2>从酷刑到现代司法</h2>
+                <p>随着启蒙运动的兴起和人权的觉醒，酷刑的道德合法性受到了前所未有的挑战。18世纪末，欧洲各国开始逐步废除酷刑。现代法律体系强调“无罪推定”原则，并严格限制审讯手段，禁止使用暴力逼供。然而，对刑讯室酷刑的研究依然具有重要的历史意义，它帮助我们理解人性的阴暗面以及法治进步的代价。</p>
+            </div>
+
+            <aside>
+                <div class="sidebar-box">
+                    <h3>目录导航</h3>
+                    <ul class="toc-list">
+                        <li><a href="#history">历史演变</a></li>
+                        <li><a href="#mechanism">运作机制</a></li>
+                        <li><a href="#psychology">心理影响</a></li>
+                        <li><a href="#abolition">废除历程</a></li>
+                        <li><a href="#modern">现代争议</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>相关概念</h3>
+                    <div class="list-item"><a href="#">严刑逼供法</a></div>
+                    <div class="list-item"><a href="#">私刑</a></div>
+                    <div class="list-item"><a href="#">极刑</a></div>
+                    <div class="list-item"><a href="#">羞辱性刑罚</a></div>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>冷知识</h3>
+                    <p style="font-size: 0.85rem; color: #aaa;">在古代，有时刑讯不仅针对身体，还包括针对名誉的公开羞辱，以剥夺犯人的社会地位。</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 刑讯室酷刑历史研究馆. All Rights Reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #555;">
+                本站内容仅供历史教育与文化研究使用，不提倡任何形式的暴力行为。
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
